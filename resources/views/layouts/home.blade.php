@@ -11,7 +11,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
-
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -23,25 +23,27 @@
     <header class="bg-white dark:bg-gray-800 shadow">
         <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
             <div class="font-bold text-xl">
-                <a href="{{ url('/') }}">Bagader Home</a>
+                <a href="{{ url('/') }}" class="text-custom-white">Bagader Homes</a>
             </div>
             <nav>
-                @if (Route::has('login'))
+                <!-- @if (Route::has('login'))
                     <div class="space-x-4">
                         @auth
                             <a href="{{ url('/dashboard') }}"
                                 class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">Dashboard</a>
                         @else
                             <a href="{{ route('login') }}"
-                                class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">Log in</a>
+                                class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">Log ins</a>
 
                             @if (Route::has('register'))
                                 <a href="{{ route('register') }}"
-                                    class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">Register</a>
+                                    class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">Registers</a>
                             @endif
                         @endauth
                     </div>
-                @endif
+                @endif -->
+                <a href="{{ route('register') }}"
+                    class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">Home</a>
             </nav>
         </div>
     </header>

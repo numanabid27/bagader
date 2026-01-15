@@ -23,7 +23,7 @@
 
         <div class="max-w-7xl mx-auto p-6 lg:p-8">
             <div class="flex justify-center">
-                <h1 class="text-4xl font-bold text-gray-900 dark:text-white">Welcome to Bagader</h1>
+                <h1 class="text-4xl font-bold text-red-500">Welcome to Bagader</h1>
             </div>
 
             <div class="mt-16 text-center text-gray-600 dark:text-gray-400">
