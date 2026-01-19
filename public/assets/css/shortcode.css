@@ -53,6 +53,21 @@
 	margin-bottom: 5px;
 }
 
+.pbmit-heading-subheading .pbmit-subtitle2 {
+	font-family: var(--pbmit-heading-typography-font-family);
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+	letter-spacing: 0.25px;
+	color: var(--pbmit-global-color);
+	text-transform: capitalize;
+	font-style: normal;
+	position: relative;
+	padding: 0px 0px 0px 25px;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
 .pbmit-heading-subheading .pbmit-subtitle::before {
 	content: "\e862";
 	font-family: "pbminfotech-base-icons";
@@ -2406,7 +2421,9 @@
 
 .pbmit-service-style-2 .pbmit-service-image-wrapper img {
 	transition: all .4s ease-in-out;
-	width: 100%
+	width: 340px;
+	height: 394px;
+	object-fit: cover;
 }
 
 .pbmit-service-style-2:hover .pbmit-service-image-wrapper img {
@@ -4550,6 +4567,11 @@
 
 .pbmit-client-style-1 .pbmit-client-wrapper .pbmit-featured-wrapper img {
 	mix-blend-mode: luminosity;
+	height: 39px;
+}
+
+.pbmit-client-hover-img img {
+	height: 39px;
 }
 
 .pbmit-ele-header-align-center.pbmit-heading-style .pbmit-element-viewtype-carousel .pbmit-heading-subheading .pbmit-element-title {

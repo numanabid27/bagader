@@ -71,193 +71,88 @@
             </nav>
         </div>
     </header> -->
-
-    <header class="site-header header-style-1">
-        <div class="pbmit-header-overlay">
-            <div class="site-header-menu">
-                <div class="container-fluid">
-                    <div class="pbmit-header-content d-flex justify-content-between align-items-center">
-                        <div class="pbmit-logo-menuarea d-flex justify-content-between align-items-center">
-                            <div class="site-branding">
-                                <h1 class="site-title">
-                                    <a href="index-2.html">
-                                        <img class="logo-img" src="{{ asset('assets/images/logo.png') }}" alt="EVgrid">
-                                        <img class="sticky-logo-img" src="{{ asset('assets/images/logo.png') }}"
-                                            alt="EVgrid">
-                                    </a>
-                                </h1>
-                            </div>
-                        </div>
-                        <div class="site-navigation">
-                            <nav class="main-menu navbar-expand-xl navbar-light">
-                                <div class="navbar-header">
-                                    <!-- Toggle Button -->
-                                    <button class="navbar-toggler" type="button">
-                                        <i class="pbmit-base-icon-menu-1"></i>
-                                    </button>
+    @if (!isset($hideHeader) || !$hideHeader)
+        <header class="site-header header-style-1">
+            <div class="pbmit-header-overlay">
+                <div class="site-header-menu">
+                    <div class="container-fluid">
+                        <div class="pbmit-header-content d-flex justify-content-between align-items-center">
+                            <div class="pbmit-logo-menuarea d-flex justify-content-between align-items-center">
+                                <div class="site-branding">
+                                    <h1 class="site-title">
+                                        <a href="index-2.html">
+                                            <img class="logo-img" src="{{ asset('assets/images/logo.png') }}" alt="EVgrid">
+                                            <img class="sticky-logo-img" src="{{ asset('assets/images/logo.png') }}"
+                                                alt="EVgrid">
+                                        </a>
+                                    </h1>
                                 </div>
-                                <div class="pbmit-mobile-menu-bg"></div>
-                                <div class="collapse navbar-collapse clearfix show" id="pbmit-menu">
-                                    <div class="pbmit-menu-wrap">
-                                        <span class="closepanel">
-                                            <svg class="qodef-svg--close qodef-m" xmlns="http://www.w3.org/2000/svg"
-                                                width="20.163" height="20.163" viewBox="0 0 26.163 26.163">
-                                                <rect width="36" height="1" transform="translate(0.707) rotate(45)">
-                                                </rect>
-                                                <rect width="36" height="1" transform="translate(0 25.456) rotate(-45)">
-                                                </rect>
-                                            </svg>
+                            </div>
+                            <div class="site-navigation">
+                                <nav class="main-menu navbar-expand-xl navbar-light">
+                                    <div class="navbar-header">
+                                        <!-- Toggle Button -->
+                                        <button class="navbar-toggler" type="button">
+                                            <i class="pbmit-base-icon-menu-1"></i>
+                                        </button>
+                                    </div>
+                                    <div class="pbmit-mobile-menu-bg"></div>
+                                    <div class="collapse navbar-collapse clearfix show" id="pbmit-menu">
+                                        <div class="pbmit-menu-wrap">
+                                            <span class="closepanel">
+                                                <svg class="qodef-svg--close qodef-m" xmlns="http://www.w3.org/2000/svg"
+                                                    width="20.163" height="20.163" viewBox="0 0 26.163 26.163">
+                                                    <rect width="36" height="1" transform="translate(0.707) rotate(45)">
+                                                    </rect>
+                                                    <rect width="36" height="1" transform="translate(0 25.456) rotate(-45)">
+                                                    </rect>
+                                                </svg>
+                                            </span>
+                                            <ul class="navigation clearfix">
+                                                <li><a href="/">Home</a></li>
+                                                <li><a href="about-us.html">About Us</a></li>
+                                                <li><a href="/product">Products</a></li>
+                                                <li><a href="/contact">Contact Us</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="pbmit-right-box d-flex align-items-center">
+                                <div class="pbmit-button-box">
+                                    <div class="pbmit-header-button">
+                                        <span style="color: #fff;">Saudi Arabia:</span>
+                                        <a href="tel:+9661 448 5150">
+                                            <span class="pbmit-header-button-text-1">+9661 448 5150</span>
+                                        </a>
+                                    </div>
+                                    <div class="pbmit-header-button" style="text-align: right;">
+                                        <span style="color: #fff;">UAE:</span>
+                                        <a href="tel:+9714 227 6881">
+                                            <span class="pbmit-header-button-text-1">+9714 227 6881</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="pbmit-button-box-second">
+                                    <a class="pbmit-btn " href="#">
+                                        <span class="pbmit-button-text">Book Consult</span>
+                                        <span class="pbmit-button-icon-wrapper">
+                                            <span class="pbmit-button-icon">
+                                                <i class="pbmit-base-icon-black-arrow-1"></i>
+                                            </span>
                                         </span>
-                                        <ul class="navigation clearfix">
-                                            <li><a href="#">Home</a></li>
-                                            <li><a href="about-us.html">About Us</a></li>
-                                            <li><a href="#">Products</a></li>
-                                            <li><a href="#">Our Partner</a></li>
-                                            <li><a href="contact-us.html">Contact Us</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </nav>
-                        </div>
-                        <div class="pbmit-right-box d-flex align-items-center">
-                            <div class="pbmit-button-box">
-                                <div class="pbmit-header-button">
-                                    <a href="tel:+9661 448 5150">
-                                        <span class="pbmit-header-button-text-1">+9661 448 5150</span>
                                     </a>
-                                </div>
-                            </div>
-                            <div class="pbmit-button-box-second">
-                                <a class="pbmit-btn " href="#">
-                                    <span class="pbmit-button-text">Book Consult</span>
-                                    <span class="pbmit-button-icon-wrapper">
-                                        <span class="pbmit-button-icon">
-                                            <i class="pbmit-base-icon-black-arrow-1"></i>
-                                        </span>
-                                    </span>
-                                </a>
-                                <div class="pbmit-sticky-corner  pbmit-top-right-corner">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill=""
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M20 20V0C20 16 16 20 0 20H20Z" fill="red"></path>
-                                    </svg>
-                                </div>
-                                <div class="pbmit-sticky-corner pbmit-bottom-left-corner">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M20 20V0C20 12 12 20 0 20H20Z" fill="red"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="pbmit-slider-area pbmit-slider-one">
-            <div class="swiper-slider" data-autoplay="true" data-loop="true" data-dots="true" data-arrows="false"
-                data-columns="1" data-margin="0" data-effect="fade">
-                <div class="swiper-wrapper">
-                    <!-- Slide1 -->
-                    <div class="swiper-slide">
-                        <div class="pbmit-slider-item">
-                            <div class="pbmit-slider-bg"
-                                style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/slide-1.jpg') }});">
-                            </div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-10">
-                                        <div class="pbmit-slider-content">
-                                            <h5 class="pbmit-sub-title transform-top transform-delay-1">One of the Asian
-                                                partners (Supplier) once called Bagader </h5>
-                                            <h2 class="pbmit-title transform-left transform-delay-3">The Batteries and
-                                                Tyres King</h2>
-                                            <div class="pbmit-desc transform-bottom transform-delay-4">
-                                                We all need a little space to grow. Give yourself the space you need to
-                                                find your inner you.
-                                            </div>
-                                            <div class="pbmit-button transform-bottom transform-delay-5">
-                                                <a class="pbmit-btn" href="#">
-                                                    <span class="pbmit-button-text">Talk to an expert</span>
-                                                    <span class="pbmit-button-icon-wrapper">
-                                                        <span class="pbmit-button-icon">
-                                                            <i class="pbmit-base-icon-black-arrow-1"></i>
-                                                        </span>
-                                                    </span>
-                                                </a>
-                                            </div>
-
-                                        </div>
+                                    <div class="pbmit-sticky-corner  pbmit-top-right-corner">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill=""
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20 20V0C20 16 16 20 0 20H20Z" fill="red"></path>
+                                        </svg>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slide2 -->
-                    <div class="swiper-slide">
-                        <div class="pbmit-slider-item">
-                            <div class="pbmit-slider-bg"
-                                style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/slide-2.jpg') }});">
-                            </div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-10">
-                                        <div class="pbmit-slider-content">
-                                            <h5 class="pbmit-sub-title transform-top transform-delay-1">Improve your
-                                                Drive</h5>
-                                            <h2 class="pbmit-title transform-left transform-delay-3">Leverage The
-                                                Potential <br> of the Future.</h2>
-                                            <div class="pbmit-desc transform-bottom transform-delay-4">
-                                                Although they won't blow up the market, electric automobiles will
-                                                gradually get better.
-                                            </div>
-                                            <div class="pbmit-button transform-bottom transform-delay-5">
-                                                <a class="pbmit-btn" href="#">
-                                                    <span class="pbmit-button-text">Talk to an expert</span>
-                                                    <span class="pbmit-button-icon-wrapper">
-                                                        <span class="pbmit-button-icon">
-                                                            <i class="pbmit-base-icon-black-arrow-1"></i>
-                                                        </span>
-                                                    </span>
-                                                </a>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slide3 -->
-                    <div class="swiper-slide">
-                        <div class="pbmit-slider-item">
-                            <div class="pbmit-slider-bg"
-                                style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/slide-3.jpg') }});">
-                            </div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-10">
-                                        <div class="pbmit-slider-content">
-                                            <h5 class="pbmit-sub-title transform-top transform-delay-1">Your Nature
-                                                Friend.</h5>
-                                            <h2 class="pbmit-title transform-left transform-delay-3">Where The energy
-                                                and <br> Excitement Collide</h2>
-                                            <div class="pbmit-desc transform-bottom transform-delay-4">
-                                                The future of transportation will be electric vehicles. We must make the
-                                                shift, and it must be sustainable.
-                                            </div>
-                                            <div class="pbmit-button transform-bottom transform-delay-5">
-                                                <a class="pbmit-btn" href="#">
-                                                    <span class="pbmit-button-text">Talk to an expert</span>
-                                                    <span class="pbmit-button-icon-wrapper">
-                                                        <span class="pbmit-button-icon">
-                                                            <i class="pbmit-base-icon-black-arrow-1"></i>
-                                                        </span>
-                                                    </span>
-                                                </a>
-                                            </div>
-
-                                        </div>
+                                    <div class="pbmit-sticky-corner pbmit-bottom-left-corner">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20 20V0C20 12 12 20 0 20H20Z" fill="red"></path>
+                                        </svg>
                                     </div>
                                 </div>
                             </div>
@@ -265,8 +160,10 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
+
+            @yield('slider')
+        </header>
+    @endif
 
     <!-- Page Content -->
     <main class="flex-grow">
@@ -274,103 +171,107 @@
     </main>
 
     <!-- Footer -->
-    <footer class="site-footer footer-style-1 pbmit-bg-color-blackish">
-        <div class="pbmit-footer-widget-area">
-            <div class="container">
-                <div class="row">
-                    <div class="pbmit-footer-widget-col-1 col-md-4">
-                        <div class="widget">
-                            <h2 class="widget-title">Subscribe to our newsletter</h2>
-                            <div class="pbmit-footer-text">
-                                <P>
-                                    Get exclusive insights, trend
-                                    <span class="globalcolor">forecasts and innovative</span>
-                                    strategies delivered directly to your inbox.
-                                </p>
-                            </div>
-                            <form>
-                                <div class="pbmit-footer-newsletter">
-                                    <input type="email" class="form-control" name="EMAIL"
-                                        placeholder="Your Email Addresss" required="">
-                                    <a class="pbmit-btn " href="#">
-                                        <span class="pbmit-button-text">Subscribe</span>
-                                        <span class="pbmit-button-icon-wrapper">
-                                            <span class="pbmit-button-icon">
-                                                <i class="pbmit-base-icon-black-arrow-1"></i>
-                                            </span>
-                                        </span>
-                                    </a>
-                                </div>
-                            </form>
-                            <div class="pbmit-social-media">
-                                <h3 class="pbmit-social-title"> Follow us on </h3>
-                                <ul class="pbmit-social-links">
-                                    <li class="pbmit-social-li pbmit-social-facebook">
-                                        <a title="Facebook" href="https://www.facebook.com/GtRadialTiresSaudiArabia"
-                                            target="_blank" rel="noopener">
-                                            <span><i class="pbmit-base-icon-facebook-app-symbol"></i></span>
-                                        </a>
-                                    </li>
-                                    <li class="pbmit-social-li pbmit-social-twitter">
-                                        <a title="Twitter" href="https://x.com/bagader_GT" target="_blank"
-                                            rel="noopener">
-                                            <span><i class="pbmit-base-icon-twitter-2"></i></span>
-                                        </a>
-                                    </li>
 
-                                    <li class="pbmit-social-li pbmit-social-youtube">
-                                        <a title="Youtube" href="https://www.youtube.com/Bagaderest" target="_blank"
-                                            rel="noopener">
-                                            <span><i class="pbmit-base-icon-youtube-play"></i></span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pbmit-footer-widget-col-2 col-md-4">
-                        <aside class="widget pbmit-two-column-menu widget_text">
-                            <h2 class="widget-title">Pages</h2>
-                            <div class="textwidget">
-                                <ul>
-                                    <li><a href="#">Home 1</a></li>
-                                    <li><a href="#">Careers</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Integrations</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                    <li><a href="#">Pricing</a></li>
-                                </ul>
-                            </div>
-                        </aside>
-                    </div>
-                    <div class="pbmit-footer-widget-col-3 col-md-4">
-                        <div class="widget widget_text">
-                            <h2 class="widget-title">Utility Page</h2>
-                            <div class="textwidget">
-                                <ul>
-                                    <li><a href="#">Style Guide</a></li>
-                                    <li><a href="#">Instructions</a></li>
-                                    <li><a href="#">Changelog</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="pbmit-footer-text-area">
-            <div class="container">
-                <div class="pbmit-footer-text-inner">
+    @if (!isset($hideFooter) || !$hideFooter)
+        <footer class="site-footer footer-style-1 pbmit-bg-color-blackish">
+            <div class="pbmit-footer-widget-area">
+                <div class="container">
                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="pbmit-footer-copyright-text-area">Copyright © 2024 <a href="#">Evgrid</a>, All
-                                Rights Reserved.</div>
+                        <div class="pbmit-footer-widget-col-1 col-md-4">
+                            <div class="widget">
+                                <h2 class="widget-title">Subscribe to our newsletter</h2>
+                                <div class="pbmit-footer-text">
+                                    <P>
+                                        Get exclusive insights, trend
+                                        <span class="globalcolor">forecasts and innovative</span>
+                                        strategies delivered directly to your inbox.
+                                    </p>
+                                </div>
+                                <form>
+                                    <div class="pbmit-footer-newsletter">
+                                        <input type="email" class="form-control" name="EMAIL"
+                                            placeholder="Your Email Addresss" required="">
+                                        <a class="pbmit-btn " href="#">
+                                            <span class="pbmit-button-text">Subscribe</span>
+                                            <span class="pbmit-button-icon-wrapper">
+                                                <span class="pbmit-button-icon">
+                                                    <i class="pbmit-base-icon-black-arrow-1"></i>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </form>
+                                <div class="pbmit-social-media">
+                                    <h3 class="pbmit-social-title"> Follow us on </h3>
+                                    <ul class="pbmit-social-links">
+                                        <li class="pbmit-social-li pbmit-social-facebook">
+                                            <a title="Facebook" href="https://www.facebook.com/GtRadialTiresSaudiArabia"
+                                                target="_blank" rel="noopener">
+                                                <span><i class="pbmit-base-icon-facebook-app-symbol"></i></span>
+                                            </a>
+                                        </li>
+                                        <li class="pbmit-social-li pbmit-social-twitter">
+                                            <a title="Twitter" href="https://x.com/bagader_GT" target="_blank"
+                                                rel="noopener">
+                                                <span><i class="pbmit-base-icon-twitter-2"></i></span>
+                                            </a>
+                                        </li>
+
+                                        <li class="pbmit-social-li pbmit-social-youtube">
+                                            <a title="Youtube" href="https://www.youtube.com/Bagaderest" target="_blank"
+                                                rel="noopener">
+                                                <span><i class="pbmit-base-icon-youtube-play"></i></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pbmit-footer-widget-col-2 col-md-4">
+                            <aside class="widget pbmit-two-column-menu widget_text">
+                                <h2 class="widget-title">Pages</h2>
+                                <div class="textwidget">
+                                    <ul>
+                                        <li><a href="#">Home 1</a></li>
+                                        <li><a href="#">Careers</a></li>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Integrations</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Pricing</a></li>
+                                    </ul>
+                                </div>
+                            </aside>
+                        </div>
+                        <div class="pbmit-footer-widget-col-3 col-md-4">
+                            <div class="widget widget_text">
+                                <h2 class="widget-title">Utility Page</h2>
+                                <div class="textwidget">
+                                    <ul>
+                                        <li><a href="#">Style Guide</a></li>
+                                        <li><a href="#">Instructions</a></li>
+                                        <li><a href="#">Changelog</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+            <div class="pbmit-footer-text-area">
+                <div class="container">
+                    <div class="pbmit-footer-text-inner">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="pbmit-footer-copyright-text-area">Copyright © 2024 <a href="#">Evgrid</a>, All
+                                    Rights Reserved.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    @endif
+
 
     <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
     <!-- Popper JS -->

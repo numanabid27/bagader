@@ -1,21 +1,31 @@
-<aside
-    class="w-64 bg-white dark:bg-gray-800 border-r border-gray-100 dark:border-gray-700 h-screen fixed left-0 top-0 overflow-y-auto hidden sm:block">
-    <div class="px-6 py-4">
-        <!-- Logo -->
-        <div class="shrink-0 flex items-center mb-6">
-            <a href="{{ route('dashboard') }}">
-                <x-application-logo class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200" />
+<aside class="sidebar d-flex flex-column flex-shrink-0 p-3 bg-white">
+    <a href="{{ route('dashboard') }}"
+        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <x-application-logo class="w-25 mx-3" />
+    </a>
+    <hr>
+    <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+            <a href="{{ route('dashboard') }}" class="nav-link {{ request()->routeIs('dashboard') ? 'active' : '' }}"
+                aria-current="page">
+                <i class="pbmit-base-icon-home"></i>
+                Dashboard
             </a>
-        </div>
+        </li>
+        <li class="nav-item">
+            <a href="{{ route('products.index') }}"
+                class="nav-link {{ request()->routeIs('products.index') ? 'active' : '' }}" aria-current="page">
+                <i class="pbmit-base-icon-home"></i>
+                Products
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="{{ route('categories.index') }}" aria-current="page"
+                class="nav-link {{ request()->routeIs('categories.*') ? 'active' : '' }}">
+                <i class="pbmit-base-icon-home"></i>
+                Categories
+            </a>
+        </li>
 
-        <!-- Navigation Links -->
-        <nav class="space-y-2">
-            <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')"
-                class="block w-full py-2 pl-3 pr-4 border-l-4 text-left text-base font-medium transition duration-150 ease-in-out {{ request()->routeIs('dashboard') ? 'border-indigo-400 text-indigo-700 bg-indigo-50 focus:outline-none focus:text-indigo-800 focus:bg-indigo-100 focus:border-indigo-700' : 'border-transparent text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300' }}">
-                {{ __('Dashboard') }}
-            </x-nav-link>
-
-            <!-- Add more links here -->
-        </nav>
-    </div>
+    </ul>
 </aside>
