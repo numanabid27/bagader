@@ -30,4 +30,19 @@ class HomeController extends Controller
     {
         return view('front.contact');
     }
+
+    public function privacyPolicy(): View
+    {
+        return view('front.privacy-policy');
+    }
+
+    public function termsAndCondition(): View
+    {
+        return view('front.terms-and-condition');
+    }
+
+    public function faq(): View
+    {
+        return view('front.faq');
+    }
 }

@@ -18,7 +18,7 @@ INDEX:
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet');
 
 :root {
-    --pbmit-global-color: #54bf66;
+    --pbmit-global-color: #595AF5;
     --pbmit-secondary-color: #232323;
     --pbmit-light-color: #f6f6f6;
     --pbmit-white-color: #ffffff;
@@ -26,7 +26,7 @@ INDEX:
     --pbmit-blackish-color: #000000;
     --pbmit-blackish-color-rgb: 0, 0, 0;
     --pbmit-link-color-normal: #000000;
-    --pbmit-link-color-hover: #54bf66;
+    --pbmit-link-color-hover: #595AF5;
     --pbmit-global-color-rgb: 84, 191, 102;
     --pbmit-responsive-breakpoint: 1200px;
 

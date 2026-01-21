@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Bagader</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -41,38 +41,11 @@
 <body
     class="font-sans antialiased text-gray-900 dark:text-gray-100 bg-gray-100 dark:bg-gray-900 flex flex-col min-h-screen">
 
-    <!-- Header -->
-    <!-- <header class="bg-white dark:bg-gray-800 shadow">
-        <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-            <div class="font-bold text-xl">
-                <a href="{{ url('/') }}">
-                    <img src="{{ asset('assets/images/logo.png') }}" class="w-[14%]" alt="Logo">
-                </a>
-            </div>
-            <nav>
-                @if (Route::has('login'))
-                    <div class="space-x-4">
-                        @auth
-                            <a href="{{ url('/dashboard') }}"
-                                class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">Dashboard</a>
-                        @else
-                            <a href="{{ route('login') }}"
-                                class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">Log ins</a>
-
-                            @if (Route::has('register'))
-                                <a href="{{ route('register') }}"
-                                    class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">Registers</a>
-                            @endif
-                        @endauth
-                    </div>
-                @endif
-                <a href="{{ route('register') }}"
-                    class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">Home</a>
-            </nav>
-        </div>
-    </header> -->
     @if (!isset($hideHeader) || !$hideHeader)
-        <header class="site-header header-style-1">
+        @php
+            $isSolidNav = request()->routeIs('front.faq') || request()->routeIs('front.terms-and-condition') || request()->routeIs('front.privacy-policy') || request()->routeIs('product.show');
+        @endphp
+        <header class="site-header header-style-1" style="{{ $isSolidNav ? 'background-color: #000;' : '' }}">
             <div class="pbmit-header-overlay">
                 <div class="site-header-menu">
                     <div class="container-fluid">
@@ -80,7 +53,7 @@
                             <div class="pbmit-logo-menuarea d-flex justify-content-between align-items-center">
                                 <div class="site-branding">
                                     <h1 class="site-title">
-                                        <a href="index-2.html">
+                                        <a href="/">
                                             <img class="logo-img" src="{{ asset('assets/images/logo.png') }}" alt="EVgrid">
                                             <img class="sticky-logo-img" src="{{ asset('assets/images/logo.png') }}"
                                                 alt="EVgrid">
@@ -110,7 +83,7 @@
                                             </span>
                                             <ul class="navigation clearfix">
                                                 <li><a href="/">Home</a></li>
-                                                <li><a href="about-us.html">About Us</a></li>
+                                                <li><a href="/about">About Us</a></li>
                                                 <li><a href="/product">Products</a></li>
                                                 <li><a href="/contact">Contact Us</a></li>
                                             </ul>
@@ -202,7 +175,7 @@
                                     </div>
                                 </form>
                                 <div class="pbmit-social-media">
-                                    <h3 class="pbmit-social-title"> Follow us on </h3>
+                                    <h3 class="pbmit-footer-text"> Follow us on </h3>
                                     <ul class="pbmit-social-links">
                                         <li class="pbmit-social-li pbmit-social-facebook">
                                             <a title="Facebook" href="https://www.facebook.com/GtRadialTiresSaudiArabia"
@@ -232,12 +205,10 @@
                                 <h2 class="widget-title">Pages</h2>
                                 <div class="textwidget">
                                     <ul>
-                                        <li><a href="#">Home 1</a></li>
-                                        <li><a href="#">Careers</a></li>
-                                        <li><a href="#">About</a></li>
-                                        <li><a href="#">Integrations</a></li>
-                                        <li><a href="#">Contact</a></li>
-                                        <li><a href="#">Pricing</a></li>
+                                        <li><a href="/">Home</a></li>
+                                        <li><a href="/about">About</a></li>
+                                        <li><a href="/product">Products</a></li>
+                                        <li><a href="/contact">Contact</a></li>
                                     </ul>
                                 </div>
                             </aside>
@@ -247,9 +218,9 @@
                                 <h2 class="widget-title">Utility Page</h2>
                                 <div class="textwidget">
                                     <ul>
-                                        <li><a href="#">Style Guide</a></li>
-                                        <li><a href="#">Instructions</a></li>
-                                        <li><a href="#">Changelog</a></li>
+                                        <li><a href="/terms-and-condition">Terms and Conditions</a></li>
+                                        <li><a href="/privacy-policy">Privacy Policy</a></li>
+                                        <li><a href="/faq">FAQ</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -262,7 +233,7 @@
                     <div class="pbmit-footer-text-inner">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="pbmit-footer-copyright-text-area">Copyright © 2024 <a href="#">Evgrid</a>, All
+                                <div class="pbmit-footer-copyright-text-area">Copyright © 2026 <a href="/">Bagader</a>, All
                                     Rights Reserved.</div>
                             </div>
                         </div>

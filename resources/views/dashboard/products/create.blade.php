@@ -1,5 +1,9 @@
 @extends('layouts.dashboard')
 
+@push('styles')
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+@endpush
+
 @section('header')
     <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
         {{ __('Create Products') }}
@@ -68,3 +72,14 @@
         <a href="{{ route('products.index') }}" class="btn btn-secondary">Cancel</a>
     </form>
 @endsection
+
+@push('scripts')
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#description').summernote({
+                height: 300,
+            });
+        });
+    </script>
+@endpush

@@ -3559,8 +3559,8 @@
 }
 
 .footer-style-1 .pbmit-footer-widget-area {
-	padding-top: 100px;
-	padding-bottom: 80px;
+	padding-top: 77px;
+	padding-bottom: 36px;
 	position: relative;
 }
 
@@ -4384,6 +4384,10 @@
 	font-weight: 700;
 	font-family: var(--pbmit-body-typography-font-family);
 	color: var(--pbmit-global-color);
+	background: #fff;
+	width: fit-content;
+	padding: 4px 14px;
+	border-radius: 23px;
 }
 
 .pbmit-slider-one .pbmit-slider-content .pbmit-title {

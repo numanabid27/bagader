@@ -9,7 +9,7 @@
                 <div class="swiper-slide">
                     <div class="pbmit-slider-item">
                         <div class="pbmit-slider-bg"
-                            style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/contact.jpg') }});">
+                            style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/product-banner.jpg') }});">
                         </div>
                         <div class="container">
                             <div class="row">
@@ -62,7 +62,7 @@
         }
 
         .product-tabs .nav-link.active {
-            background-color: #54bf66;
+            background-color: #595AF5;
             color: white;
             box-shadow: 0 8px 15px rgba(217, 35, 45, 0.3);
             transform: translateY(-2px);
@@ -121,21 +121,22 @@
 
         .product-price {
             font-size: 1.35rem;
-            font-weight: 800;
-            color: #54bf66;
+            font-weight: 600;
+            color: #595AF5;
             display: block;
+            padding-bottom: 11px;
         }
 
         .badge-category {
             position: absolute;
             top: 15px;
             right: 15px;
-            background: rgba(255, 255, 255, 0.9);
-            color: #333;
+            background: #595AF5;
+            color: #fff;
             padding: 5px 12px;
             border-radius: 20px;
             font-size: 0.8rem;
-            font-weight: 600;
+            font-weight: 500;
             z-index: 2;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
@@ -167,7 +168,7 @@
                 <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
                     <div class="row g-4">
                         @foreach ($products as $product)
-                            <div class="col-lg-4 col-md-6">
+                            <div class="col-lg-3 col-md-6">
                                 <div class="product-card shadow-sm">
                                     <span class="badge-category">{{ $product->category->name ?? 'Product' }}</span>
                                     <div class="product-img-wrapper">
@@ -175,9 +176,9 @@
                                     </div>
                                     <div class="card-body">
                                         <h5 class="product-title">{{ $product->name }}</h5>
-                                        <p class="product-desc">{{ Str::limit($product->description, 90) }}</p>
-                                        <span class="product-price">${{ number_format($product->price, 2) }}</span>
-                                        <a href="/product/{{ $product->id }}">View Detail</a>
+                                        <span class="product-price">AED {{ number_format($product->price, 2) }} </span>
+                                        <a href="{{ route('product.show', $product->slug) }}"
+                                            class="btn btn-sm btn-outline-success">View Detail</a>
                                     </div>
                                 </div>
                             </div>
@@ -192,15 +193,18 @@
                         <div class="row g-4">
                             @if($category->products->count() > 0)
                                 @foreach ($category->products as $product)
-                                    <div class="col-lg-4 col-md-6">
+                                    <div class="col-lg-3 col-md-6">
                                         <div class="product-card shadow-sm">
                                             <div class="product-img-wrapper">
                                                 <img src="{{ asset($product->image) }}" alt="{{ $product->name }}">
                                             </div>
                                             <div class="card-body">
                                                 <h5 class="product-title">{{ $product->name }}</h5>
-                                                <p class="product-desc">{{ Str::limit($product->description, 90) }}</p>
                                                 <span class="product-price">${{ number_format($product->price, 2) }}</span>
+                                                <div class="mt-3">
+                                                    <a href="{{ route('product.show', $product->slug) }}"
+                                                        class="btn btn-sm btn-outline-success">View Detail</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

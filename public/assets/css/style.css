@@ -226,6 +226,23 @@ body {
     background-color: var(--pbmit-blackish-color);
 }
 
+.product-image-box img {
+    height: 519px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product__row {
+    max-width: 1700px;
+    margin: 0 auto;
+    gap: 32px;
+    flex-wrap: unset;
+}
+
+.form-control {
+    background-color: #e9ecef !important;
+}
+
 .contaxt_bg {
     background-position: center center;
     background-repeat: no-repeat;

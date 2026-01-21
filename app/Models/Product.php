@@ -8,6 +8,7 @@ class Product extends Model
 {
     protected $fillable = [
         'name',
+        'slug',
         'description',
         'price',
         'image',
@@ -15,9 +16,21 @@ class Product extends Model
         'is_active',
     ];
 
+    public static function boot()
+    {
+        parent::boot();
+
+        static::saving(function ($product) {
+            if (empty($product->slug)) {
+                $product->slug = \Illuminate\Support\Str::slug($product->name);
+            }
+        });
+    }
+
     public function category()
     {
         return $this->belongsTo(Category::class);
     }
+
 
 }

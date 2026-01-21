@@ -14,22 +14,27 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
-    
+
     <!-- Other Theme CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/fontawesome.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/themify-icons.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/pbminfotech-base-icons.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
-    
+
+    @stack('styles')
+
+
     <!-- Custom Dashboard CSS -->
     <style>
         body {
             background-color: #f8f9fa;
         }
+
         .dashboard-container {
             min-height: 100vh;
         }
+
         .sidebar {
             width: 280px;
             background: #fff;
@@ -40,6 +45,7 @@
             z-index: 1000;
             border-right: 1px solid #eee;
         }
+
         .main-content {
             margin-left: 280px;
             width: calc(100% - 280px);
@@ -47,7 +53,7 @@
             display: flex;
             flex-direction: column;
         }
-        
+
         .nav-link {
             color: #636363;
             padding: 12px 20px;
@@ -57,23 +63,28 @@
             align-items: center;
             font-weight: 500;
         }
-        .nav-link:hover, .nav-link.active {
+
+        .nav-link:hover,
+        .nav-link.active {
             background-color: #f0f0f0;
             color: #000;
         }
+
         .nav-link i {
             width: 24px;
             margin-right: 10px;
         }
-        
+
         @media (max-width: 991px) {
             .sidebar {
                 transform: translateX(-100%);
                 transition: transform 0.3s ease;
             }
+
             .sidebar.show {
                 transform: translateX(0);
             }
+
             .main-content {
                 margin-left: 0;
                 width: 100%;
@@ -111,6 +122,8 @@
     <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
     <script src="{{ asset('assets/js/popper.min.js') }}"></script>
     <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+
+    @stack('scripts')
 </body>
 
 </html>

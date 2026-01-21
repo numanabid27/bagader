@@ -16,9 +16,9 @@ class ProductController extends Controller
         return view('front.product', compact('products', 'categories'));
     }
 
-    public function show($id)
+    public function show($slug)
     {
-        $product = Product::find($id);
+        $product = Product::where('slug', $slug)->firstOrFail();
         return view('front.viewProduct', compact('product'));
     }
 }

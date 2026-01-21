@@ -9,7 +9,7 @@
                 <div class="swiper-slide">
                     <div class="pbmit-slider-item">
                         <div class="pbmit-slider-bg"
-                            style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/slide-1.jpg') }});">
+                            style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/about.png') }});">
                         </div>
                         <div class="container">
                             <div class="row">
@@ -44,7 +44,7 @@
                 <div class="swiper-slide">
                     <div class="pbmit-slider-item">
                         <div class="pbmit-slider-bg"
-                            style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/slide-2.jpg') }});">
+                            style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/slide-1.jpg') }});">
                         </div>
                         <div class="container">
                             <div class="row">
@@ -209,9 +209,7 @@
                         </div>
                         <div class="pbmit-contentbox col-md-6">
                             <div class="pbmit-heading-subheading animation-style4">
-                                <h4 class="pbmit-subtitle">
-                                    Our History
-                                </h4>
+
                                 <h2 class="pbmit-title">Type History & Tyre Technology</h2>
                                 <div class="pbmit-heading-desc">
                                     Some of the tyre brands put out in the market an unusual looking tyre. It is asymmetric.
@@ -339,9 +337,7 @@
                 <div class="container pbmit-col-stretched-yes pbmit-col-right">
                     <div class="position-relative">
                         <div class="pbmit-heading-subheading animation-style2">
-                            <h4 class="pbmit-subtitle">
-                                Charging Solutions That Suit Everyone
-                            </h4>
+
                             <h2 class="pbmit-title">Choose Your Way of Charging</h2>
                         </div>
                     </div>
@@ -546,7 +542,7 @@
                                         <h3>Batteries</h3>
                                         <p>For Automotive and Industrial applications, including cars, trucks, motorcycles,
                                             marine, back up generators, UPS, and Leisure.</p>
-                                        <a href="#" class="pbmit-btn pbmit-btn-style-2">View Products</a>
+                                        <a href="/product" class="pbmit-btn pbmit-btn-style-2">View Products</a>
                                     </div>
                                 </div>
                             </div>
@@ -559,7 +555,7 @@
                                         <h3>Tyres</h3>
                                         <p>For passenger cars, buses, trucks, agricultural trailers, and earthmoving
                                             equipment.</p>
-                                        <a href="#" class="pbmit-btn pbmit-btn-style-2">View Products</a>
+                                        <a href="/product" class="pbmit-btn pbmit-btn-style-2">View Products</a>
                                     </div>
                                 </div>
                             </div>
@@ -574,24 +570,13 @@
         <section class="about-section-one section-md">
             <div class="about-contant">
                 <div class="container">
-                    <div class="pbmit-ele-header-align-center">
-                        <div class="pbmit-heading-subheading animation-style2 text-center">
-                            <h2 class="pbmit-title">Our Partners</h2>
-                            <h4 class="pbmit-subtitle2">
 
-                                We directly import from leading manufacturers in China, Germany, Indonesia, India,
-                                Korea,
-                                Japan and Thailand.
-                            </h4>
-
-                        </div>
-                    </div>
                     <div class="row justify-content-between">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <div>
                                 <h6>Established in 1965, BAGADER is a specialist in the import, distribution, and export of
                                     :-</h6>
-                                <p style="text-align: justify;">Batteries – for Automotive and Industrial applications,
+                                <p style="text-align: justify;">Batteries - for Automotive and Industrial applications,
                                     including cars, trucks,
                                     motorcycles, marine, back up generators, UPS, and Leisure. Tyres and Tubes – for
                                     passenger cars, buses, trucks, agricultural trailers, and earthmoving equipment. The
@@ -620,120 +605,120 @@
                                     ensuring the availability of products at all times.</p>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <!-- <div class="col-md-6">
 
 
-                            <div class="pbmit-tab">
-                                <ul class="nav nav-tabs" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link active" data-bs-toggle="tab" href="#tab-partners-1"
-                                            aria-selected="true" role="tab">
-                                            <span>Tyre Brands</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link" data-bs-toggle="tab" href="#tab-partners-2"
-                                            aria-selected="false" role="tab" tabindex="-1">
-                                            <span>Battery Brands</span>
-                                        </a>
-                                    </li>
+                                                <div class="pbmit-tab">
+                                                    <ul class="nav nav-tabs" role="tablist">
+                                                        <li class="nav-item" role="presentation">
+                                                            <a class="nav-link active" data-bs-toggle="tab" href="#tab-partners-1"
+                                                                aria-selected="true" role="tab">
+                                                                <span>Tyre Brands</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <a class="nav-link" data-bs-toggle="tab" href="#tab-partners-2"
+                                                                aria-selected="false" role="tab" tabindex="-1">
+                                                                <span>Battery Brands</span>
+                                                            </a>
+                                                        </li>
 
-                                </ul>
-                                <div class="tab-content">
-                                    <div class="tab-pane show active" id="tab-partners-1" role="tabpanel">
-                                        <div class="pbmit-column-inner">
-                                            <div class="pbmit-tab-content-inner">
-                                                <div class="row pbmit-tab-contents">
+                                                    </ul>
+                                                    <div class="tab-content">
+                                                        <div class="tab-pane show active" id="tab-partners-1" role="tabpanel">
+                                                            <div class="pbmit-column-inner">
+                                                                <div class="pbmit-tab-content-inner">
+                                                                    <div class="row pbmit-tab-contents">
 
-                                                    <div class="col-md-12">
-                                                        <div class="row partner_row">
-                                                            <div class="col-md-3">
-                                                                <img src="{{ asset('assets/images/partner-2.png') }}"
-                                                                    alt="">
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <img src="{{ asset('assets/images/partner-3.png') }}"
-                                                                    alt="">
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <img src="{{ asset('assets/images/partner-4.png') }}"
-                                                                    alt="">
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <img src="{{ asset('assets/images/partner-10.png') }}"
-                                                                    alt="">
-                                                            </div>
+                                                                        <div class="col-md-12">
+                                                                            <div class="row partner_row">
+                                                                                <div class="col-md-3">
+                                                                                    <img src="{{ asset('assets/images/partner-2.png') }}"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="col-md-3">
+                                                                                    <img src="{{ asset('assets/images/partner-3.png') }}"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="col-md-3">
+                                                                                    <img src="{{ asset('assets/images/partner-4.png') }}"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="col-md-3">
+                                                                                    <img src="{{ asset('assets/images/partner-10.png') }}"
+                                                                                        alt="">
+                                                                                </div>
 
-                                                            <div class="col-md-3">
-                                                                <img src="{{ asset('assets/images/partner-11.png') }}"
-                                                                    alt="">
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <img src="{{ asset('assets/images/partner-12.png') }}"
-                                                                    alt="">
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <img src="{{ asset('assets/images/partner-13.png') }}"
-                                                                    alt="">
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <img src="{{ asset('assets/images/partner-14.png') }}"
-                                                                    alt="">
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <img src="{{ asset('assets/images/partner-15.png') }}"
-                                                                    alt="">
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <img src="{{ asset('assets/images/partner-16.png') }}"
-                                                                    alt="">
+                                                                                <div class="col-md-3">
+                                                                                    <img src="{{ asset('assets/images/partner-11.png') }}"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="col-md-3">
+                                                                                    <img src="{{ asset('assets/images/partner-12.png') }}"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="col-md-3">
+                                                                                    <img src="{{ asset('assets/images/partner-13.png') }}"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="col-md-3">
+                                                                                    <img src="{{ asset('assets/images/partner-14.png') }}"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="col-md-3">
+                                                                                    <img src="{{ asset('assets/images/partner-15.png') }}"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="col-md-3">
+                                                                                    <img src="{{ asset('assets/images/partner-16.png') }}"
+                                                                                        alt="">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane" id="tab-partners-2" role="tabpanel">
-                                        <div class="pbmit-column-inner">
-                                            <div class="pbmit-tab-content-inner">
-                                                <div class="row pbmit-tab-contents">
+                                                        <div class="tab-pane" id="tab-partners-2" role="tabpanel">
+                                                            <div class="pbmit-column-inner">
+                                                                <div class="pbmit-tab-content-inner">
+                                                                    <div class="row pbmit-tab-contents">
 
-                                                    <div class="col-md-12">
-                                                        <div class="row partner_row">
-                                                            <div class="col-md-3">
-                                                                <img src="{{ asset('assets/images/partner-1.png') }}"
-                                                                    alt="">
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <img src="{{ asset('assets/images/partner-6.png') }}"
-                                                                    alt="">
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <img src="{{ asset('assets/images/partner-9.jpg') }}"
-                                                                    alt="">
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <img src="{{ asset('assets/images/partner-7.png') }}"
-                                                                    alt="">
-                                                            </div>
+                                                                        <div class="col-md-12">
+                                                                            <div class="row partner_row">
+                                                                                <div class="col-md-3">
+                                                                                    <img src="{{ asset('assets/images/partner-1.png') }}"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="col-md-3">
+                                                                                    <img src="{{ asset('assets/images/partner-6.png') }}"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="col-md-3">
+                                                                                    <img src="{{ asset('assets/images/partner-9.jpg') }}"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="col-md-3">
+                                                                                    <img src="{{ asset('assets/images/partner-7.png') }}"
+                                                                                        alt="">
+                                                                                </div>
 
-                                                            <div class="col-md-3">
-                                                                <img src="{{ asset('assets/images/partner-8.png') }}"
-                                                                    alt="">
-                                                            </div>
+                                                                                <div class="col-md-3">
+                                                                                    <img src="{{ asset('assets/images/partner-8.png') }}"
+                                                                                        alt="">
+                                                                                </div>
 
 
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
+
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
+                                            </div> -->
                     </div>
 
 
@@ -743,15 +728,12 @@
         <!-- About End -->
 
         <!-- Our Clients Start -->
-        <section class="our-client-section-one section-md pbmit-bg-color-blackish">
+        <section class="our-client-section-one section-md pbmit-bg-color-blackish" style="margin-bottom: 60px;">
             <div class="our-client-wrap">
                 <div class="container">
                     <div class="pbmit-ele-header-align-center">
                         <div class="pbmit-heading-subheading text-center animation-style2">
-                            <h4 class="pbmit-subtitle">
-                                <span></span>
-                                Our Clients
-                            </h4>
+
                             <h2 class="pbmit-title">Compatible brands</h2>
                         </div>
                     </div>
@@ -929,235 +911,6 @@
             </div>
         </section>
         <!-- Our Clients End -->
-
-        <!-- Testimonial Start -->
-        <section class="testimonial-section-one pbmit-element-testimonial-style-3">
-            <div class="testimonial-demo">
-                <div class="container p-0">
-                    <div class="testimonial-item">
-                        <div class="pbmit-tween-efect pbmit-tween-text pbmit-tween-effect-style-1">
-                            <div class="pbmit-tween-effect" data-x-start="0" data-x-end="0" data-y-start="80" data-y-end="0"
-                                data-scale-x-start="1" data-scale-x-end=" 1" data-skew-x-start=" 0deg"
-                                data-skew-x-end="0deg" data-skew-y-start=" 0deg" data-skew-y-end=" 0deg"
-                                data-rotate-x-start="0" data-rotate-x-end="0">
-                                <h3 class="pbmit-element-title">Testimonials</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pbmit-element-testimonial-style-3">
-                        <div class="pbmit-posts-inner">
-                            <div class="swiper-slider pbmit-gallery-top" data-arrows="true">
-                                <div class="swiper-wrapper">
-                                    <!-- Slide1 -->
-                                    <div class="swiper-slide">
-                                        <div class="pbminfotech-post-item">
-                                            <div class="pbminfotech-box-star-ratings">
-                                                <i class="pbmit-base-icon-star-1 pbmit-active"></i>
-                                                <i class="pbmit-base-icon-star-1 pbmit-active"></i>
-                                                <i class="pbmit-base-icon-star-1 pbmit-active"></i>
-                                                <i class="pbmit-base-icon-star-1 pbmit-active"></i>
-                                                <i class="pbmit-base-icon-star-1 pbmit-active"></i>
-                                            </div>
-                                            <div class="pbminfotech-box-desc">
-                                                <blockquote class="pbminfotech-testimonial-text">
-                                                    <p>“Passages of Lorem Ipsum available, but the majority have suffered
-                                                        alteration in some form, by injected humour, or randomised words
-                                                        which evenhtly believable.</p>
-                                                </blockquote>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Slide2 -->
-                                    <div class="swiper-slide">
-                                        <div class="pbminfotech-post-item">
-                                            <div class="pbminfotech-box-star-ratings">
-                                                <i class="pbmit-base-icon-star-1 pbmit-active"></i>
-                                                <i class="pbmit-base-icon-star-1 pbmit-active"></i>
-                                                <i class="pbmit-base-icon-star-1 pbmit-active"></i>
-                                                <i class="pbmit-base-icon-star-1 pbmit-active"></i>
-                                                <i class="pbmit-base-icon-star-1 pbmit-active"></i>
-                                            </div>
-                                            <div class="pbminfotech-box-desc">
-                                                <blockquote class="pbminfotech-testimonial-text">
-                                                    <p>“Passages of Lorem Ipsum available, but the majority have suffered
-                                                        alteration in some form, by injected humour, or randomised words
-                                                        which evenhtly believable.</p>
-                                                </blockquote>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Slide3 -->
-                                    <div class="swiper-slide">
-                                        <div class="pbminfotech-post-item">
-                                            <div class="pbminfotech-box-star-ratings">
-                                                <i class="pbmit-base-icon-star-1 pbmit-active"></i>
-                                                <i class="pbmit-base-icon-star-1 pbmit-active"></i>
-                                                <i class="pbmit-base-icon-star-1 pbmit-active"></i>
-                                                <i class="pbmit-base-icon-star-1 pbmit-active"></i>
-                                                <i class="pbmit-base-icon-star-1 pbmit-active"></i>
-                                            </div>
-                                            <div class="pbminfotech-box-desc">
-                                                <blockquote class="pbminfotech-testimonial-text">
-                                                    <p>“Passages of Lorem Ipsum available, but the majority have suffered
-                                                        alteration in some form, by injected humour, or randomised words
-                                                        which evenhtly believable.</p>
-                                                </blockquote>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Slide4 -->
-                                    <div class="swiper-slide">
-                                        <div class="pbminfotech-post-item">
-                                            <div class="pbminfotech-box-star-ratings"> <i
-                                                    class="pbmit-base-icon-star-1 pbmit-active"></i>
-                                                <i class="pbmit-base-icon-star-1 pbmit-active"></i>
-                                                <i class="pbmit-base-icon-star-1 pbmit-active"></i>
-                                                <i class="pbmit-base-icon-star-1 pbmit-active"></i>
-                                                <i class="pbmit-base-icon-star-1 pbmit-active"></i>
-                                            </div>
-                                            <div class="pbminfotech-box-desc">
-                                                <blockquote class="pbminfotech-testimonial-text">
-                                                    <p>“Passages of Lorem Ipsum available, but the majority have suffered
-                                                        alteration in some form, by injected humour, or randomised words
-                                                        which evenhtly believable.</p>
-                                                </blockquote>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Slide5 -->
-                                    <div class="swiper-slide">
-                                        <div class="pbminfotech-post-item">
-                                            <div class="pbminfotech-box-star-ratings">
-                                                <i class="pbmit-base-icon-star-1 pbmit-active"></i>
-                                                <i class="pbmit-base-icon-star-1 pbmit-active"></i>
-                                                <i class="pbmit-base-icon-star-1 pbmit-active"></i>
-                                                <i class="pbmit-base-icon-star-1 pbmit-active"></i>
-                                                <i class="pbmit-base-icon-star-1 pbmit-active"></i>
-                                            </div>
-                                            <div class="pbminfotech-box-desc">
-                                                <blockquote class="pbminfotech-testimonial-text">
-                                                    <p>“I would recommend practitioners at this center to everyone! They are
-                                                        great to work with and are excellemt trainers. Thank you all!”</p>
-                                                </blockquote>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slider pbmit-gallery-thumbs">
-                                <div class="swiper-wrapper">
-                                    <!-- Slide1 -->
-                                    <div class="swiper-slide">
-                                        <div class="pbmit-auther-content">
-                                            <div class="pbminfotech-box-img">
-                                                <div class="pbmit-featured-img-wrapper">
-                                                    <div class="pbmit-featured-wrapper">
-                                                        <img src="{{ asset('assets/images/homepage-1/testimonial/testimonial-img-01.jpg') }}"
-                                                            alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <h3 class="pbminfotech-box-title">Hazel Jenkins</h3>
-                                            <div class="pbminfotech-testimonial-detail">Ceo &amp; Founder</div>
-                                        </div>
-                                    </div>
-                                    <!-- Slide2 -->
-                                    <div class="swiper-slide">
-                                        <div class="pbmit-auther-content">
-                                            <div class="pbminfotech-box-img">
-                                                <div class="pbmit-featured-img-wrapper">
-                                                    <div class="pbmit-featured-wrapper">
-                                                        <img src="{{ asset('assets/images/homepage-1/testimonial/testimonial-img-02.jpg') }}"
-                                                            alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <h3 class="pbminfotech-box-title">Dylan Wang</h3>
-                                            <div class="pbminfotech-testimonial-detail">Manager</div>
-                                        </div>
-                                    </div>
-                                    <!-- Slide3 -->
-                                    <div class="swiper-slide">
-                                        <div class="pbmit-auther-content">
-                                            <div class="pbminfotech-box-img">
-                                                <div class="pbmit-featured-img-wrapper">
-                                                    <div class="pbmit-featured-wrapper">
-                                                        <img src="{{ asset('assets/images/homepage-1/testimonial/testimonial-img-03.jpg') }}"
-                                                            alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <h3 class="pbminfotech-box-title">Naomi Violet</h3>
-                                            <div class="pbminfotech-testimonial-detail">Manager</div>
-                                        </div>
-                                    </div>
-                                    <!-- Slide4 -->
-                                    <div class="swiper-slide">
-                                        <div class="pbmit-auther-content">
-                                            <div class="pbminfotech-box-img">
-                                                <div class="pbmit-featured-img-wrapper">
-                                                    <div class="pbmit-featured-wrapper">
-                                                        <img src="{{ asset('assets/images/homepage-1/testimonial/testimonial-img-04.jpg') }}"
-                                                            alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <h3 class="pbminfotech-box-title">Parsons William</h3>
-                                            <div class="pbminfotech-testimonial-detail">Co Founder</div>
-                                        </div>
-                                    </div>
-                                    <!-- Slide5 -->
-                                    <div class="swiper-slide">
-                                        <div class="pbmit-auther-content">
-                                            <div class="pbminfotech-box-img">
-                                                <div class="pbmit-featured-img-wrapper">
-                                                    <div class="pbmit-featured-wrapper">
-                                                        <img src="{{ asset('assets/images/homepage-1/testimonial/testimonial-img-05.jpg') }}"
-                                                            alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <h3 class="pbminfotech-box-title">Ariana Green</h3>
-                                            <div class="pbminfotech-testimonial-detail">Satisfied Client</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 testimonial-left-col">
-                            <div class="testimonial-wrap">
-                                <div class="testimonial-image">
-                                    <div class="testimonial-widget-container">
-                                        <img src="{{ asset('assets/images/homepage-1/bg/rating-star.png') }}" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 testimonial-right-col">
-                            <div class="testimonial-wrap">
-                                <div class="testimonial-widget">
-                                    <div class=" pbmit-custom-heading animation-style4">
-                                        <h2 class="pbmit-element-title">Check all 3,583 readers reviews on</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="testimonial-wrap">
-                                <div class="testimonial-contant">
-                                    <div class="testimonial-img">
-                                        <img src="{{ asset('assets/images/homepage-1/bg/client-logo-page.png') }}" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Testimonial End -->
 
     </div>
 @endsection
